@@ -35,15 +35,27 @@ body {
 
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .emblem {
-	margin: 30px auto 20px;
-	padding: 18px 26px 0;
-	font-size: 64px;
-	user-select: none;
-	border: 2px solid;
+	--size: 72px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border: calc(var(--size) * 0.04) solid;
 	border-radius: 500px;
+	padding: 0;
+	text-align: center;
+	height: calc(var(--size) * 1.125);
+	width: calc(var(--size) * 1.125);
+	user-select: none;
 	background-color: var(--background);
+}
+.emblem p {
+	font-size: var(--size);
+	padding-top: calc(var(--size) / 3.5);
 }
 .logo {
 	margin: 0 auto;
@@ -51,6 +63,7 @@ body {
 	background-color: var(--background);
 	text-align: center;
 }
+
 .main {
 	margin: 0 auto;
 	background-color: var(--color-3);

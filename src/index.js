@@ -1,5 +1,5 @@
 import './style.css'
-import RestaurantImage from './restaurant.jpg'
+import RestaurantImage from './images/restaurant.jpg'
 
 /*function component() {
 	const element = document.createElement('div')
@@ -12,23 +12,30 @@ import RestaurantImage from './restaurant.jpg'
 	return element
 }*/
 
+function emblem() {
+	const emblem = document.createElement('div')
+	const p = document.createElement('p')
+	
+	emblem.classList.add('emblem')
+	emblem.appendChild(p)
+	p.innerText = 'I'
+	
+	return emblem
+}
+
 function hero() {
 	const hero = document.createElement('div')
 	const banner = document.createElement('div')
-	const emblem = document.createElement('p')
 	const logo = document.createElement('h1')
-
+	
 	hero.classList.add('hero')
 	banner.classList.add('banner')
-	emblem.classList.add('emblem')
 	logo.classList.add('logo')
-
-	emblem.innerText = 'I'
+	
 	logo.innerText = 'Inspired Coffee Co.'
 
-	banner.appendChild(emblem)
+	banner.appendChild(emblem())
 	banner.appendChild(logo)
-
 	hero.appendChild(banner)
 
 	return hero
