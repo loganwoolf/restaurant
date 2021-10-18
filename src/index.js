@@ -5,21 +5,43 @@ import { menu } from './module-menu'
 import { contact } from './module-contact'
 
 
-const content = () => {
-	const content = document.createElement('div')
-	content.classList.add('content')
-
-	//list of functions to mount in order
-	// content.appendChild(hero())
-	content.appendChild(home())
-	
-	return content
-}
-
 const displayController = (() => {
 	document.body.appendChild(hero())
-	document.body.appendChild(content())
-
 	
+	const content = document.createElement('div')
+	content.classList.add('content')
+	document.body.appendChild(content)
+	
+	content.appendChild(home())
+	
+	const changeView = (e) => {
+		let page = e.srcElement.id
+		switch(page) {
+			case "home":
+				viewHomePage()
+				break;
+			case "menu":
+				viewMenuPage()
+				break;
+			case "contact":
+				viewContactPage()
+				break;
+		}
+	}
+	
+	const viewHomePage = () => {
+		content.replaceChild(home(), content.childNodes[0])
+	}
+	
+	const viewMenuPage = () => {
+		content.replaceChild(menu(), content.childNodes[0])
+	}
+	
+	const viewContactPage = () => {
+		content.replaceChild(contact(), content.childNodes[0])
+	}
+
+	const buttonsContainer = document.querySelector('.buttons-container')
+	buttonsContainer.addEventListener('click', changeView)
 	
 })()
