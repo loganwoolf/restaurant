@@ -88,19 +88,44 @@ body {
 	border-color: var(--color-5);	
 }
 
-.home {
+.content {
 	margin: 0 auto;
 	background-color: var(--color-3);
-	height: 300px;
+	min-height: 100vh;
 	max-width: 700px;
+	padding: 0 30px;
 }
-.home p {
+.page-subtext {
 	background-color: var(--background-trans);
 	text-align: center;
 	margin: 0 auto;
+	padding: 2rem;
 	font-family: "Josefin Slab", serif;
 	font-size: 22px;
 	color: var(--color-5);
-	max-width: 35ch;
-	padding: 16px 0;
+	max-width: 500px;
 }
+.menu section {
+	background-color: var(--background-trans);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+.menu-heading {
+	font-family: 'Special Elite', cursive;
+	color: var(--logo-color);
+	background: var(--background);
+	padding: 0.6rem 0.6rem 0.3rem;
+}
+.menu-subtext,.menu-list{
+	font-family: 'Josefin Slab', serif;
+	color: var(--color-5);
+	font-size: 22px;
+}
+.menu-list {
+	align-self: flex-start;
+}
+
