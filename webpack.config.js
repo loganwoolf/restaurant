@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-   mode: 'development', //must be removed for production
+   // mode: 'development', //must be removed for production
    entry: {
       index: './src/index.js',
    },
@@ -13,7 +13,7 @@ module.exports = {
    },
    plugins: [
       new HtmlWebpackPlugin({
-         title: 'Restaurant (Dev)', //remove line 5 'mode'
+         title: 'Restaurant', //remove line 5 'mode'
       }),
    ],
    output: {
