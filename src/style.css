@@ -132,7 +132,41 @@ body {
 	color: var(--color-5);
 	font-size: 22px;
 }
+.menu-subtext {
+	text-align: center;
+	max-width: 30ch;
+}
 .menu-list {
 	align-self: flex-start;
 }
 
+.contact-cards {
+	font-family: 'Josefin Slab', serif;
+	color: var(--color-5);
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: var(--background-trans);
+	padding: 0 2rem 2rem;
+}
+.contact-person {
+	padding-left: 1.5rem;
+}
+.contact-person p {
+	margin: 0;
+}
+.contact-name {
+	font-size: 22px;
+	color: var(--logo-color);
+	padding-bottom: 0.3rem;
+}
+.contact-position {
+	padding-bottom: 0.2rem;
+}
+.address {
+	background-color: var(--background-trans);
+	margin: 0;
+	text-align: center;
+	font-family: 'Josefin Slab', serif;
+	color: var(--color-5);
+	padding-bottom: 2rem;
+}

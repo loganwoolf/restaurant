@@ -31,7 +31,7 @@ const menu = () => {
    menu.classList.add('menu')
 
    const subtext = document.createElement('p')
-   subtext.textContent = "Our menu features our ethically sourced coffee as well as local and international favorites."
+   subtext.innerText = "Our menu features our ethically sourced coffee as well as local and international favorites."
    subtext.classList.add('page-subtext')
    menu.appendChild(subtext)
 

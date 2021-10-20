@@ -12,7 +12,7 @@ const displayController = (() => {
 	content.classList.add('content')
 	document.body.appendChild(content)
 	
-	content.appendChild(home())
+	content.appendChild(home()) //change default page
 	
 	const changeView = (e) => {
 		let page = e.srcElement.id
