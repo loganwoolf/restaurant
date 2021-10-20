@@ -91,27 +91,34 @@ body {
 .content {
 	margin: 0 auto;
 	background-color: var(--color-3);
-	min-height: 100vh;
-	max-width: 700px;
+	max-width: 640px;
 	padding: 0 30px;
 }
 .page-subtext {
 	background-color: var(--background-trans);
 	text-align: center;
-	margin: 0 auto;
-	padding: 2rem;
+	margin: 0;
 	font-family: "Josefin Slab", serif;
+	padding: 2rem;
 	font-size: 22px;
 	color: var(--color-5);
-	max-width: 500px;
+}
+.home-image-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-auto-rows: 250px;
+	
+}
+.home-image-container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 .menu section {
 	background-color: var(--background-trans);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 500px;
-	margin: 0 auto;
 	padding: 0 2rem;
 }
 .menu-heading {
